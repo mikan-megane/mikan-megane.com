@@ -1,0 +1,455 @@
+/* layout variables (scale from -1 to 1) */
+
+$logo-size:             0 !default;
+$logo-ratio:			0 !default;
+$logo-distance:         0 !default;
+$logo-offset:           0 !default;
+$logo-tagline-size:		0 !default;
+
+$base-size:				16px !default;
+$logo-width:			20em !default;
+$font-scale-factor:		1.875 !default;
+
+/* colors */
+$primary-color:			#f00 !default;
+$info-color:			#00f !default;
+$accent-color:			#ff0 !default;
+$dark-color:			#333 !default;
+$light-color:			#eee !default;
+
+/* compenate for non-squareness of icon */
+$vertical-compensation:	0 !default;
+$horizontal-compensation:	0 !default;
+
+/* derived sizes */
+$vertical-distance:	(0.9375 + $logo-distance * 6.25) / $font-scale-factor;
+$horizontal-distance: (1.875 + $logo-distance * 5) / $font-scale-factor;
+
+$offset:	2*$logo-offset;
+
+$icon-size: 0.01*(0.75*($logo-size+1) + 0.25) * (1.2*(15/($logo-ratio+1.3) + 5))*$logo-width;
+
+$title-family:	'Montserrat', helvetica, arial, sans-serif !default;
+$title-weight:	600 !default;
+$title-style:	normal !default;
+$title-size: 	(0.75*($logo-size+1) + 0.25) * 1.2*((2*($logo-ratio+1) + 1)) / $font-scale-factor;
+
+$tagline-family:	'Lora', georgia, times, serif !default;
+$tagline-weight:	400 !default;
+$tagline-style:		oblique !default;
+$tagline-size: 		(0.6 + 0.5*($logo-tagline-size - 0.1))*$title-size;
+
+/* bootstrap 4 breakpoints */
+$screen-sm-min:	576px;
+$screen-md-min:	768px;
+$screen-lg-min:	992px;
+$screen-xl-min:	1200px;
+
+.brandmark-logo{
+	width: $logo-width;
+	font-size: $base-size;
+	text-align: left;
+	transition: font-size 0.5s;
+	
+	/* general styles */
+	.logo-wrapper{
+	display: inline-block;
+	}
+	
+	h1{
+	display: block;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	}
+	
+	h2{
+	display: none;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	margin-top: 0.4em;
+	}
+
+	h1{
+	font-family: $title-family;
+	font-weight: $title-weight;
+	font-style: $title-style;
+	font-size: $title-size + em;
+	}
+
+	h2{
+	font-family: $tagline-family;
+	font-weight: $tagline-weight;
+	font-style: $tagline-style;
+	font-size: $tagline-size + em;
+	margin-top: 0.4em;
+	}
+
+	.logo-glyph{
+	width: $icon-size;
+	height: $icon-size;
+	}
+}
+
+.logo-tagline h2{
+	display: block;
+}
+
+/* vertical layout */
+@mixin vertical {
+	.logo-wrapper{
+	width: auto;
+	text-align: center;
+	}
+	
+	.logo-glyph{
+	display: block;
+	margin: 0 auto;
+	}
+	
+	.logo-text-group{
+	position: static;
+	display: block;
+	width: auto;
+	text-align: center;
+	margin-left: $offset + em;
+	margin-top: $vertical-distance - ($vertical-compensation * $icon-size);
+	}
+}
+
+/* horizontal layout */
+@mixin horizontal {
+	.logo-wrapper{
+	vertical-align: middle;
+	}
+	
+	.logo-glyph, .logo-text-group{
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+	}
+	
+	.logo-text-group{
+	text-align: left;
+	position: relative;
+	left: $horizontal-distance - ($horizontal-compensation * $icon-size);
+	top: $offset + em;
+	}
+}
+
+/* text-only layout */
+@mixin text {
+	.logo-wrapper{
+	width: auto;
+	text-align: center;
+	}
+	
+	.logo-glyph{
+	display: none;
+	}
+	
+	.logo-text-group{
+	position: static;
+	display: block;
+	width: auto;
+	text-align: inherit;
+	}
+}
+
+/* icon-only layout */
+@mixin icon {
+	.logo-glyph{
+	display: inline-block;
+	margin: 0;
+	}
+	.logo-text-group{
+	display: none;
+	}
+}
+
+.logo-vertical{
+	@include vertical;
+}
+
+.logo-horizontal{
+	@include horizontal;
+}
+
+.logo-text{
+	@include text;
+}
+
+.logo-icon{
+	@include icon;
+}
+
+@media (min-width: $screen-sm-min) {
+	.logo-sm-vertical{
+		@include vertical;
+	}
+	
+	.logo-sm-horizontal{
+		@include horizontal;
+	}
+
+	.logo-sm-text{
+		@include text;
+	}
+
+	.logo-sm-icon{
+		@include icon;
+	}
+	
+	.logo-sm-tagline h2{
+		display: block;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.logo-md-vertical{
+		@include vertical;
+	}
+	
+	.logo-md-horizontal{
+		@include horizontal;
+	}
+
+	.logo-md-text{
+		@include text;
+	}
+
+	.logo-md-icon{
+		@include icon;
+	}
+	
+	.logo-md-tagline h2{
+		display: block;
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	.logo-lg-vertical{
+		@include vertical;
+	}
+	
+	.logo-lg-horizontal{
+		@include horizontal;
+	}
+
+	.logo-lg-text{
+		@include text;
+	}
+
+	.logo-lg-icon{
+		@include icon;
+	}
+	
+	.logo-lg-tagline h2{
+		display: block;
+	}
+}
+
+@media (min-width: $screen-xl-min) {
+	.logo-xl-vertical{
+		@include vertical;
+	}
+	
+	.logo-xl-horizontal{
+		@include horizontal;
+	}
+
+	.logo-xl-text{
+		@include text;
+	}
+
+	.logo-xl-icon{
+		@include icon;
+	}
+	
+	.logo-xl-tagline h2{
+		display: block;
+	}
+}
+
+
+/* navbar styles override previously defined styles */
+
+.navbar-logo-active .logo-nav-vertical{
+	@include vertical;
+}
+
+.navbar-logo-active .logo-nav-horizontal{
+	@include horizontal;
+}
+
+.navbar-logo-active .logo-nav-text{
+	@include text;
+}
+
+.navbar-logo-active .logo-nav-icon{
+	@include icon;
+}
+
+.navbar-logo-active .brandmark-logo h2{
+	display: none;
+}
+
+.navbar-logo-active .logo-nav-tagline h2{
+	display: block;
+}
+
+@media (min-width: $screen-sm-min) {
+	.navbar-logo-active .logo-nav-sm-vertical{
+		@include vertical;
+	}
+	
+	.navbar-logo-active .logo-nav-sm-horizontal{
+		@include horizontal;
+	}
+
+	.navbar-logo-active .logo-nav-sm-text{
+		@include text;
+	}
+
+	.navbar-logo-active .logo-nav-sm-icon{
+		@include icon;
+	}
+	
+	.navbar-logo-active .logo-nav-sm-tagline h2{
+		display: block;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.navbar-logo-active .logo-nav-md-vertical{
+		@include vertical;
+	}
+	
+	.navbar-logo-active .logo-nav-md-horizontal{
+		@include horizontal;
+	}
+
+	.navbar-logo-active .logo-nav-md-text{
+		@include text;
+	}
+
+	.navbar-logo-active .logo-nav-md-icon{
+		@include icon;
+	}
+	
+	.navbar-logo-active .logo-nav-md-tagline h2{
+		display: block;
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	.navbar-logo-active .logo-nav-lg-vertical{
+		@include vertical;
+	}
+	
+	.navbar-logo-active .logo-nav-lg-horizontal{
+		@include horizontal;
+	}
+
+	.navbar-logo-active .logo-nav-lg-text{
+		@include text;
+	}
+
+	.navbar-logo-active .logo-nav-lg-icon{
+		@include icon;
+	}
+	
+	.navbar-logo-active .logo-nav-lg-tagline h2{
+		display: block;
+	}
+}
+
+@media (min-width: $screen-xl-min) {
+	.navbar-logo-active .logo-nav-xl-vertical{
+		@include vertical;
+	}
+	
+	.navbar-logo-active .logo-nav-xl-horizontal{
+		@include horizontal;
+	}
+
+	.navbar-logo-active .logo-nav-xl-text{
+		@include text;
+	}
+
+	.navbar-logo-active .logo-nav-xl-icon{
+		@include icon;
+	}
+	
+	.navbar-logo-active .logo-nav-xl-tagline h2{
+		display: block;
+	}
+}
+
+.text-primary svg *, svg.text-primary * {
+  fill: $primary-color !important;
+}
+.text-info svg *, svg.text-info * {
+  fill: $info-color !important;
+}
+.text-accent svg *, svg.text-accent *  {
+  fill: $accent-color !important;
+}
+.text-dark svg *, svg.text-dark *  {
+  fill: $dark-color !important;
+}
+.text-light svg *, svg.text-light *  {
+  fill: $light-color !important;
+}
+.text-black svg *, svg.text-black * {
+  fill: #000000 !important;
+}
+.text-white svg *, svg.text-white * {
+  fill: #ffffff !important;
+}
+
+/* navigation color override */
+.navbar-logo-active .text-nav-light{
+color: $light-color !important;
+}
+.navbar-logo-active .text-nav-primary{
+color: $primary-color !important;
+}
+.navbar-logo-active .text-nav-info{
+color: $info-color !important;
+}
+.navbar-logo-active .text-nav-accent{
+color: $accent-color !important;
+}
+.navbar-logo-active .text-nav-dark{
+color: $dark-color !important;
+}
+.navbar-logo-active .text-nav-white{
+color: #ffffff !important;
+}
+.navbar-logo-active .text-nav-black{
+color: #000000 !important;
+}
+
+.navbar-logo-active .text-nav-light svg *, .navbar-logo-active svg.text-nav-light *{
+fill: $light-color !important;
+}
+.navbar-logo-active .text-nav-primary svg *, .navbar-logo-active svg.text-nav-primary *{
+fill: $primary-color !important;
+}
+.navbar-logo-active .text-nav-info svg *, .navbar-logo-active svg.text-nav-info *{
+fill: $info-color !important;
+}
+.navbar-logo-active .text-nav-accent svg *, .navbar-logo-active svg.text-nav-accent *{
+fill: $accent-color !important;
+}
+.navbar-logo-active .text-nav-dark svg *, .navbar-logo-active svg.text-nav-dark *{
+fill: $dark-color !important;
+}
+.navbar-logo-active .text-nav-white svg *, .navbar-logo-active svg.text-nav-white *{
+fill: #ffffff !important;
+}
+.navbar-logo-active .text-nav-black svg *, .navbar-logo-active svg.text-nav-black *{
+fill: #000000 !important;
+}

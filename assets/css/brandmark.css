@@ -1,0 +1,380 @@
+.top-buffer{
+margin-top: 3em;
+}
+
+.bottom-buffer{
+margin-bottom: 3em;
+}
+
+#demo_logo{
+width: 30em;
+margin-top: 3em;
+}
+
+.navbar-logo-active #demo_logo{
+font-size: 12px;
+margin-top: 0;
+padding: 1.5em 0;
+}
+
+.nav-open .navbar-collapse {
+	display: none;
+}
+
+.nav-open #demo-navbar .navbar-collapse{
+	display: block;
+}
+
+.navbar{
+padding-top: 0;
+padding-bottom: 0;
+}
+
+.hero-cards-wrapper{
+float: left;
+position: relative;
+width: 100%;
+height: 0;
+top: -16em;
+right: -30em;
+padding-bottom: 50%;
+}
+
+.hero-cards{
+-webkit-perspective: 8000px;
+perspective: 8000px;
+min-height: 18.75em;
+position: relative;
+}
+
+.hero-cards .brandmark-logo{
+width: 100%;
+font-size: 24px;
+text-align: center;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.hero-cards .card .footer{
+margin: 0;
+}
+
+.hero-cards li{
+	position: absolute;
+top: 0em;
+right: 0;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+	overflow: hidden;
+width: 480px;
+height: 640px;
+padding: 1px;
+background: #fff;
+background-repeat: no-repeat;
+display: block;
+text-align: center;
+}
+
+.hero-cards li.hero-card-1{
+height: 480px;
+}
+
+.tablet{
+padding-top: 5em;
+}
+
+.tablet-wrapper{
+width: 100%;
+padding-top: 70.434%;
+background: transparent url(../img/tablet.png) no-repeat;
+background-size: 100%;
+position: relative;
+}
+
+.tablet-wrapper-inner{
+	width: 92%;
+	height: 92%;
+	position: absolute;
+	top: 4%;
+	left: 4%;
+}
+
+.brand{
+padding-top: 5em;
+padding-bottom: 2em;
+}
+
+.brand-top{
+padding-top: 16em;
+}
+
+.brand input{
+margin-bottom: 1em;
+margin-right: 1em;
+}
+
+.brand h1.title{
+font-size: 4em;
+margin-bottom: 0;
+font-weight: inherit;
+}
+
+h1.extra-large, h2.extra-large{
+font-size: 5em;
+}
+
+.brand-left{
+text-align: left;
+}
+
+.brand .btn{
+margin-right: 0.5em;
+margin-bottom: 0.5em;
+}
+
+.section.clear-padding{
+	padding: 0;
+}
+
+.section.clear-padding .container-fluid{
+padding: 0;
+width: 100%;
+overflow: hidden;
+}
+
+.clear-padding [class*='col-']{
+padding: 0;
+}
+
+.caption{
+width: 100%;
+height: 100%;
+box-sizing: border-box;
+min-height: 20em;
+}
+
+.caption-bottom{
+padding: 10em 6em 4em 6em;
+}
+
+.caption-bottom{
+padding: 4em 6em 10em 6em;
+}
+
+.fill-image{
+min-height: 20em;
+}
+
+.caption-bottom h3, .caption-bottom h4{
+display: block;
+width: 100%;
+}
+
+.caption-bottom a{
+color: #fff;
+}
+
+.caption.caption-left, .caption.caption-right{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2em;
+	min-height: 20em;
+	position: relative;
+}
+
+.caption.caption-left:after, .caption.caption-right:after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: 1em solid transparent;
+	position: absolute;
+	top: 50%;
+	margin-top: -1em;
+}
+
+.caption.caption-left:after{
+	border-left-color: inherit;
+	right: -2em;
+}
+
+.caption.caption-right:after{
+	border-right-color: inherit;
+	left: -2em;
+}
+
+.caption.caption-left h1,  .caption.caption-right h1,
+.caption.caption-left h2,  .caption.caption-right h2,
+.caption.caption-left h3,  .caption.caption-right h3,
+.caption.caption-left h4,  .caption.caption-right h4{
+margin: 0.15em;
+}
+
+/* logo */
+.navbar-logo-active .logo{
+overflow: hidden;
+}
+
+.logo{
+width: 20em;
+height: auto;
+font-size: 16px;
+}
+
+.logo-fill{
+width: 100%;
+min-height: 12em;
+margin: 1em 0 0.5em 0;
+padding: 3em 0;
+text-align: center;
+box-sizing: border-box;
+font-size: 10px;
+}
+
+.logo-center{
+text-align: center;
+}
+
+
+.navbar .logo{
+height: 5em;
+}
+
+.code{
+font-family: monospace;
+}
+
+/* pricing */
+.card-pricing{
+padding-top: 2em;
+padding-bottom: 2em;
+}
+.card-pricing .list-group{
+font-size: 0.8em;
+opacity: 0.7;
+}
+
+.card-pricing h2{
+font-size: 3em;
+}
+
+.card-pricing small{
+font-size: 0.4em;
+opacity: 0.3;
+}
+
+/* break points */
+@media (max-width: 1199px) {
+	.brand h1{
+	font-size: 3.8em;
+	}
+	.hero-cards .brandmark-logo{
+	font-size: 16px;
+	}
+}
+
+@media (max-width: 991px) {
+	.brand h1{
+	font-size: 3.6em;
+	}
+	.hero-cards-wrapper{
+	top: -6em;
+	right: -5em;
+	}
+	
+	.tablet{
+	padding-top: 6.5em;
+	}
+	
+	#demo_logo{
+	margin-top: 2em;
+	font-size: 10px;
+	}
+	
+	.navbar-logo-active #demo_logo{
+	font-size: 10px;
+	margin-top: 0;
+	}
+	
+	.index-page .page-header{
+	padding-bottom: 10em;
+	}
+}
+
+@media (max-width: 767px) {
+	body, html{
+	font-size: 15px;
+	}
+	.brand h1{
+	font-size: 3.4em;
+	}
+	.brand-top{
+	padding-top: 11em;
+	}
+	
+	.hero-cards .brandmark-logo{
+	font-size: 10px;
+	}
+	.hero-cards-wrapper{
+	top: -4em;
+	right: -9em;
+	}
+	
+	.tablet{
+	padding-top: 0;
+	}
+	
+	.caption-bottom, .caption-top{
+	padding-left: 5em;
+	padding-right: 5em;
+	}
+	
+	h1.extra-large, h2.extra-large{
+	font-size: 4.5em;
+	}
+	
+	.index-page .page-header{
+	padding-bottom: 13em;
+	}
+}
+
+@media (max-width: 480px) {
+	body, html{
+	font-size: 14px;
+	}
+	.brand-top{
+	padding-top: 10em;
+	}
+	
+	.brand h1{
+	font-size: 3.2em;
+	}
+	.hero-cards-wrapper{
+	display: none;
+	}
+	
+	.caption-bottom, .caption-top{
+	padding-left: 3em;
+	padding-right: 3em;
+	}
+	
+	.navbar .logo{
+	left: -1.2em;
+	}
+	
+	h1.extra-large, h2.extra-large{
+	font-size: 3.5em;
+	}
+	
+	.index-page .page-header{
+	padding-bottom: 2em;
+	}
+}

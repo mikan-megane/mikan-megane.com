@@ -1,0 +1,575 @@
+/* layout variables (scale from -1 to 1) */
+/* colors */
+/* compenate for non-squareness of icon */
+/* derived sizes */
+/* bootstrap 4 breakpoints */
+.brandmark-logo {
+  width: 20em;
+  font-size: 16px;
+  text-align: left;
+  transition: font-size 0.5s;
+  /* general styles */ }
+  .brandmark-logo .logo-wrapper {
+    display: inline-block; }
+  .brandmark-logo h1 {
+    display: block;
+    line-height: 1;
+    margin: 0;
+    padding: 0; }
+  .brandmark-logo h2 {
+    display: none;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.4em; }
+  .brandmark-logo h1 {
+    font-family: Hind Siliguri;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5616em; }
+  .brandmark-logo h2 {
+    font-family: Kanit;
+    font-weight: 200;
+    font-style: oblique;
+    font-size: 0.85888em;
+    margin-top: 0.4em; }
+  .brandmark-logo .logo-glyph {
+    width: 4.72941em;
+    height: 4.72941em; }
+
+.logo-tagline h2 {
+  display: block; }
+/* vertical layout */
+/* horizontal layout */
+/* text-only layout */
+/* icon-only layout */
+.logo-vertical .logo-wrapper {
+  width: auto;
+  text-align: center; }
+  .logo-vertical .logo-glyph {
+    display: block;
+    margin: 0 auto; }
+  .logo-vertical .logo-text-group {
+    position: static;
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-left: 0em;
+    margin-top: 0.47635em; }
+
+.logo-horizontal .logo-wrapper {
+  vertical-align: middle; }
+  .logo-horizontal .logo-glyph, .logo-horizontal .logo-text-group {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle; }
+  .logo-horizontal .logo-text-group {
+    text-align: left;
+    position: relative;
+    left: 0.36153em;
+    top: 0em; }
+
+.logo-text .logo-wrapper {
+  width: auto;
+  text-align: center; }
+  .logo-text .logo-glyph {
+    display: none; }
+  .logo-text .logo-text-group {
+    position: static;
+    display: block;
+    width: auto;
+    text-align: inherit; }
+
+.logo-icon .logo-glyph {
+  display: inline-block;
+  margin: 0; }
+  .logo-icon .logo-text-group {
+    display: none; }
+
+@media (min-width: 576px) {
+  .logo-sm-vertical .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .logo-sm-vertical .logo-glyph {
+      display: block;
+      margin: 0 auto; }
+    .logo-sm-vertical .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 0.47635em; }
+
+  .logo-sm-horizontal .logo-wrapper {
+    vertical-align: middle; }
+    .logo-sm-horizontal .logo-glyph, .logo-sm-horizontal .logo-text-group {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    .logo-sm-horizontal .logo-text-group {
+      text-align: left;
+      position: relative;
+      left: 0.36153em;
+      top: 0em; }
+
+  .logo-sm-text .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .logo-sm-text .logo-glyph {
+      display: none; }
+    .logo-sm-text .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: inherit; }
+
+  .logo-sm-icon .logo-glyph {
+    display: inline-block;
+    margin: 0; }
+    .logo-sm-icon .logo-text-group {
+      display: none; }
+
+  .logo-sm-tagline h2 {
+    display: block; } }
+
+@media (min-width: 768px) {
+  .logo-md-vertical .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .logo-md-vertical .logo-glyph {
+      display: block;
+      margin: 0 auto; }
+    .logo-md-vertical .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 0.47635em; }
+
+  .logo-md-horizontal .logo-wrapper {
+    vertical-align: middle; }
+    .logo-md-horizontal .logo-glyph, .logo-md-horizontal .logo-text-group {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    .logo-md-horizontal .logo-text-group {
+      text-align: left;
+      position: relative;
+      left: 0.36153em;
+      top: 0em; }
+
+  .logo-md-text .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .logo-md-text .logo-glyph {
+      display: none; }
+    .logo-md-text .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: inherit; }
+
+  .logo-md-icon .logo-glyph {
+    display: inline-block;
+    margin: 0; }
+    .logo-md-icon .logo-text-group {
+      display: none; }
+
+  .logo-md-tagline h2 {
+    display: block; } }
+
+@media (min-width: 992px) {
+  .logo-lg-vertical .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .logo-lg-vertical .logo-glyph {
+      display: block;
+      margin: 0 auto; }
+    .logo-lg-vertical .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 0.47635em; }
+
+  .logo-lg-horizontal .logo-wrapper {
+    vertical-align: middle; }
+    .logo-lg-horizontal .logo-glyph, .logo-lg-horizontal .logo-text-group {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    .logo-lg-horizontal .logo-text-group {
+      text-align: left;
+      position: relative;
+      left: 0.36153em;
+      top: 0em; }
+
+  .logo-lg-text .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .logo-lg-text .logo-glyph {
+      display: none; }
+    .logo-lg-text .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: inherit; }
+
+  .logo-lg-icon .logo-glyph {
+    display: inline-block;
+    margin: 0; }
+    .logo-lg-icon .logo-text-group {
+      display: none; }
+
+  .logo-lg-tagline h2 {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .logo-xl-vertical .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .logo-xl-vertical .logo-glyph {
+      display: block;
+      margin: 0 auto; }
+    .logo-xl-vertical .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 0.47635em; }
+
+  .logo-xl-horizontal .logo-wrapper {
+    vertical-align: middle; }
+    .logo-xl-horizontal .logo-glyph, .logo-xl-horizontal .logo-text-group {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    .logo-xl-horizontal .logo-text-group {
+      text-align: left;
+      position: relative;
+      left: 0.36153em;
+      top: 0em; }
+
+  .logo-xl-text .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .logo-xl-text .logo-glyph {
+      display: none; }
+    .logo-xl-text .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: inherit; }
+
+  .logo-xl-icon .logo-glyph {
+    display: inline-block;
+    margin: 0; }
+    .logo-xl-icon .logo-text-group {
+      display: none; }
+
+  .logo-xl-tagline h2 {
+    display: block; } }
+/* navbar styles override previously defined styles */
+.navbar-logo-active .logo-nav-vertical .logo-wrapper {
+  width: auto;
+  text-align: center; }
+  .navbar-logo-active .logo-nav-vertical .logo-glyph {
+    display: block;
+    margin: 0 auto; }
+  .navbar-logo-active .logo-nav-vertical .logo-text-group {
+    position: static;
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-left: 0em;
+    margin-top: 0.47635em; }
+
+.navbar-logo-active .logo-nav-horizontal .logo-wrapper {
+  vertical-align: middle; }
+  .navbar-logo-active .logo-nav-horizontal .logo-glyph, .navbar-logo-active .logo-nav-horizontal .logo-text-group {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle; }
+  .navbar-logo-active .logo-nav-horizontal .logo-text-group {
+    text-align: left;
+    position: relative;
+    left: 0.36153em;
+    top: 0em; }
+
+.navbar-logo-active .logo-nav-text .logo-wrapper {
+  width: auto;
+  text-align: center; }
+  .navbar-logo-active .logo-nav-text .logo-glyph {
+    display: none; }
+  .navbar-logo-active .logo-nav-text .logo-text-group {
+    position: static;
+    display: block;
+    width: auto;
+    text-align: inherit; }
+
+.navbar-logo-active .logo-nav-icon .logo-glyph {
+  display: inline-block;
+  margin: 0; }
+  .navbar-logo-active .logo-nav-icon .logo-text-group {
+    display: none; }
+
+.navbar-logo-active .brandmark-logo h2 {
+  display: none; }
+
+.navbar-logo-active .logo-nav-tagline h2 {
+  display: block; }
+
+@media (min-width: 576px) {
+  .navbar-logo-active .logo-nav-sm-vertical .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .navbar-logo-active .logo-nav-sm-vertical .logo-glyph {
+      display: block;
+      margin: 0 auto; }
+    .navbar-logo-active .logo-nav-sm-vertical .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 0.47635em; }
+
+  .navbar-logo-active .logo-nav-sm-horizontal .logo-wrapper {
+    vertical-align: middle; }
+    .navbar-logo-active .logo-nav-sm-horizontal .logo-glyph, .navbar-logo-active .logo-nav-sm-horizontal .logo-text-group {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    .navbar-logo-active .logo-nav-sm-horizontal .logo-text-group {
+      text-align: left;
+      position: relative;
+      left: 0.36153em;
+      top: 0em; }
+
+  .navbar-logo-active .logo-nav-sm-text .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .navbar-logo-active .logo-nav-sm-text .logo-glyph {
+      display: none; }
+    .navbar-logo-active .logo-nav-sm-text .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: inherit; }
+
+  .navbar-logo-active .logo-nav-sm-icon .logo-glyph {
+    display: inline-block;
+    margin: 0; }
+    .navbar-logo-active .logo-nav-sm-icon .logo-text-group {
+      display: none; }
+
+  .navbar-logo-active .logo-nav-sm-tagline h2 {
+    display: block; } }
+
+@media (min-width: 768px) {
+  .navbar-logo-active .logo-nav-md-vertical .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .navbar-logo-active .logo-nav-md-vertical .logo-glyph {
+      display: block;
+      margin: 0 auto; }
+    .navbar-logo-active .logo-nav-md-vertical .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 0.47635em; }
+
+  .navbar-logo-active .logo-nav-md-horizontal .logo-wrapper {
+    vertical-align: middle; }
+    .navbar-logo-active .logo-nav-md-horizontal .logo-glyph, .navbar-logo-active .logo-nav-md-horizontal .logo-text-group {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    .navbar-logo-active .logo-nav-md-horizontal .logo-text-group {
+      text-align: left;
+      position: relative;
+      left: 0.36153em;
+      top: 0em; }
+
+  .navbar-logo-active .logo-nav-md-text .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .navbar-logo-active .logo-nav-md-text .logo-glyph {
+      display: none; }
+    .navbar-logo-active .logo-nav-md-text .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: inherit; }
+
+  .navbar-logo-active .logo-nav-md-icon .logo-glyph {
+    display: inline-block;
+    margin: 0; }
+    .navbar-logo-active .logo-nav-md-icon .logo-text-group {
+      display: none; }
+
+  .navbar-logo-active .logo-nav-md-tagline h2 {
+    display: block; } }
+
+@media (min-width: 992px) {
+  .navbar-logo-active .logo-nav-lg-vertical .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .navbar-logo-active .logo-nav-lg-vertical .logo-glyph {
+      display: block;
+      margin: 0 auto; }
+    .navbar-logo-active .logo-nav-lg-vertical .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 0.47635em; }
+
+  .navbar-logo-active .logo-nav-lg-horizontal .logo-wrapper {
+    vertical-align: middle; }
+    .navbar-logo-active .logo-nav-lg-horizontal .logo-glyph, .navbar-logo-active .logo-nav-lg-horizontal .logo-text-group {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    .navbar-logo-active .logo-nav-lg-horizontal .logo-text-group {
+      text-align: left;
+      position: relative;
+      left: 0.36153em;
+      top: 0em; }
+
+  .navbar-logo-active .logo-nav-lg-text .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .navbar-logo-active .logo-nav-lg-text .logo-glyph {
+      display: none; }
+    .navbar-logo-active .logo-nav-lg-text .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: inherit; }
+
+  .navbar-logo-active .logo-nav-lg-icon .logo-glyph {
+    display: inline-block;
+    margin: 0; }
+    .navbar-logo-active .logo-nav-lg-icon .logo-text-group {
+      display: none; }
+
+  .navbar-logo-active .logo-nav-lg-tagline h2 {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .navbar-logo-active .logo-nav-xl-vertical .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .navbar-logo-active .logo-nav-xl-vertical .logo-glyph {
+      display: block;
+      margin: 0 auto; }
+    .navbar-logo-active .logo-nav-xl-vertical .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 0.47635em; }
+
+  .navbar-logo-active .logo-nav-xl-horizontal .logo-wrapper {
+    vertical-align: middle; }
+    .navbar-logo-active .logo-nav-xl-horizontal .logo-glyph, .navbar-logo-active .logo-nav-xl-horizontal .logo-text-group {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle; }
+    .navbar-logo-active .logo-nav-xl-horizontal .logo-text-group {
+      text-align: left;
+      position: relative;
+      left: 0.36153em;
+      top: 0em; }
+
+  .navbar-logo-active .logo-nav-xl-text .logo-wrapper {
+    width: auto;
+    text-align: center; }
+    .navbar-logo-active .logo-nav-xl-text .logo-glyph {
+      display: none; }
+    .navbar-logo-active .logo-nav-xl-text .logo-text-group {
+      position: static;
+      display: block;
+      width: auto;
+      text-align: inherit; }
+
+  .navbar-logo-active .logo-nav-xl-icon .logo-glyph {
+    display: inline-block;
+    margin: 0; }
+    .navbar-logo-active .logo-nav-xl-icon .logo-text-group {
+      display: none; }
+
+  .navbar-logo-active .logo-nav-xl-tagline h2 {
+    display: block; } }
+
+.text-primary svg *, svg.text-primary * {
+  fill: #f1ae46 !important; }
+
+.text-info svg *, svg.text-info * {
+  fill: #33a5a6 !important; }
+
+.text-accent svg *, svg.text-accent * {
+  fill: #ce6e5c !important; }
+
+.text-dark svg *, svg.text-dark * {
+  fill: #4f4a5c !important; }
+
+.text-light svg *, svg.text-light * {
+  fill: #f5f7f8 !important; }
+
+.text-black svg *, svg.text-black * {
+  fill: #000 !important; }
+
+.text-white svg *, svg.text-white * {
+  fill: #fff !important; }
+/* navigation color override */
+.navbar-logo-active .text-nav-light {
+  color: #f5f7f8 !important; }
+
+.navbar-logo-active .text-nav-primary {
+  color: #f1ae46 !important; }
+
+.navbar-logo-active .text-nav-info {
+  color: #33a5a6 !important; }
+
+.navbar-logo-active .text-nav-accent {
+  color: #ce6e5c !important; }
+
+.navbar-logo-active .text-nav-dark {
+  color: #4f4a5c !important; }
+
+.navbar-logo-active .text-nav-white {
+  color: #fff !important; }
+
+.navbar-logo-active .text-nav-black {
+  color: #000 !important; }
+
+.navbar-logo-active .text-nav-light svg *, .navbar-logo-active svg.text-nav-light * {
+  fill: #f5f7f8 !important; }
+
+.navbar-logo-active .text-nav-primary svg *, .navbar-logo-active svg.text-nav-primary * {
+  fill: #f1ae46 !important; }
+
+.navbar-logo-active .text-nav-info svg *, .navbar-logo-active svg.text-nav-info * {
+  fill: #33a5a6 !important; }
+
+.navbar-logo-active .text-nav-accent svg *, .navbar-logo-active svg.text-nav-accent * {
+  fill: #ce6e5c !important; }
+
+.navbar-logo-active .text-nav-dark svg *, .navbar-logo-active svg.text-nav-dark * {
+  fill: #4f4a5c !important; }
+
+.navbar-logo-active .text-nav-white svg *, .navbar-logo-active svg.text-nav-white * {
+  fill: #fff !important; }
+
+.navbar-logo-active .text-nav-black svg *, .navbar-logo-active svg.text-nav-black * {
+  fill: #000 !important; }
